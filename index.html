@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <title>Chat LIVE</title>
+</head>
+<body>
+    <main>
+        
+        <ul id="mensaje_lista">
+            <li class="mensaje bot">
+               
+            </li>
+        </ul>
+        <ul>
+            <li class="mensaje usuario">
+                
+           </li>
+        </ul>
+     </main>
+     
+     <form action="">
+        <input placeholder="Escribime lo que quieras..." >
+        <button disabled>Enviar</button>
+    </form>
+    <small>&nbsp;</small>
+    <template id="mensaje_template">
+        <li class="mensaje">
+            <span class="who"></span>
+            <span class="text"></span>
+        </li>
+    </template>
+</body>
+<script type="module" src="index.js"></script>
+</html>

@@ -1,0 +1,109 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: system-ui;
+    color: white;
+    background-color: black;
+    display: grid;
+    place-content: center;
+    height:100vh;
+    height: 100dvh;
+}
+
+main{
+    width:30rem;
+    max-width: 100%;
+    background: linear-gradient(180deg, rgb(128, 19, 190), rgb(211, 16, 218));
+    height: 70vh;
+    border:solid 2px;  
+    border-radius: 5px;
+    box-shadow: inset  0 0 10px black;
+    overflow-y: auto;
+    padding: 8px;
+    scroll-behavior: smooth;
+
+}
+
+ul{
+   display: flex;
+   flex-direction: column;
+   list-style: none;
+   padding: 0;
+}
+
+.mensaje{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    margin:5px 0;
+    padding:5px 9px;
+
+    >span:first-child{
+    background-color:red;
+    width: 60px;
+    max-width: 60px;
+    border-radius: 5px;
+    padding:2px 4px;
+    word-break: break-word; 
+    overflow-wrap: break-word; 
+    } 
+    >span:last-child{
+        padding: 4px 4px;
+    border-radius: 5px;
+    word-break: break-word; 
+    overflow-wrap: break-word; 
+    
+    }}
+
+.mensaje.usuario{
+    align-self: flex-end;
+    align-items:flex-end ;
+    span{background-color: rgba(141, 226, 226, 0.664);}  
+}
+.mensaje.bot{
+    align-self: flex-start;
+       span{background-color: rgba(196, 78, 10, 0.808);}  
+}
+    
+form{
+    display: flex;
+   
+    input{
+        border-radius: 50px;
+        padding: 8px;
+        flex-grow: 1;
+        border:1px solid #ccc;
+        margin:5px 10px;}
+        
+    button{
+        background-color: rgb(126, 14, 160);
+        border: 0;
+        padding:6px;
+        border-radius: 5px;
+        color: white;
+        margin:5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        
+        &:disabled{
+            background-color: #ccc;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+        &:hover{
+            background-color: rgb(163, 74, 247);
+        }
+        
+    }    
+    
+}
+small {
+    color: white;
+    position: fixed;
+    bottom: 50px;
+    left: 50%; 
+    transform: translateX(-50%);
+}
